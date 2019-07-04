@@ -12,7 +12,7 @@ public class Controller {
 
     @RequestMapping("/test")
     public String test(){
-        System.out.println("docker test111");
-        return "docker-demo";
+        System.out.println("docker test");
+        return "docker-demo11111";
     }
 }
