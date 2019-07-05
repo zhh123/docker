@@ -11,12 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-    @Value("${version}")
-    private String version;
 
     @RequestMapping("/test")
     public String test(){
-        System.out.println("docker test version: "+version);
+        System.out.println("docker test version: ");
         return "docker-demo11111";
     }
 }
