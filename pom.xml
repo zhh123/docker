@@ -49,9 +49,9 @@
                 <version>0.4.13</version>
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                   <!-- <imageTags>
+                    <imageTags>
                         <imageTag>${project.version}</imageTag>
-                    </imageTags>-->
+                    </imageTags>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
