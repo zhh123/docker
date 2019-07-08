@@ -50,7 +50,7 @@
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <imageTags>
-                        <imageTag>${project.version}</imageTag>
+                        <imageTag>2.0.0</imageTag>
                     </imageTags>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
