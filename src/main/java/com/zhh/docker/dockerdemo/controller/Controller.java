@@ -15,10 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     private final Logger logger = LoggerFactory.getLogger(Controller.class);
 
+    @Value("${version}")
+    String version;
+
     @RequestMapping("/test")
     public String test(){
-        System.out.println("docker test version: ");
+        System.out.println("docker test version: "+version);
         logger.info("this is docker logs test");
-        return "docker-demo11111";
+        return "version: "+version;
     }
 }
